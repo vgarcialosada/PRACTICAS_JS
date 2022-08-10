@@ -1,3 +1,4 @@
+/*E1*/
 function whatsTheMonth(int) {
   switch (int) {
     case 1:
@@ -34,9 +35,30 @@ function whatsTheMonth(int) {
     case 12:
       return "December";
     default:
-      return "How did that even happen";
+      return "Not a month number";
   }
 }
 
-num=Math.floor(Math.random() * 13);
-console.log("Month "+ num + ": "+ whatsTheMonth(num));
+num = Math.floor(Math.random() * 13);
+console.log("Month " + num + ": " + whatsTheMonth(num));
+
+/*E2*/
+numbers = ["1", "2", "3", "4", "5"];
+function returnNumber(number) {
+  switch (number) {
+    case "1":
+      return 1;
+    case "2":
+      return 2;
+    case "3":
+      return 3;
+    case "4":
+      return 4;
+    case "5":
+      return 5;
+    default:
+      return 0;
+  }
+}
+number = Math.floor(Math.random() * 6);
+console.log(returnNumber(numbers[number]));
