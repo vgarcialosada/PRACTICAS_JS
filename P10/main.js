@@ -26,7 +26,7 @@ console.log(startsWithAca(stringTest));
 console.log(startsWithAca(stringTest2));
 
 /*E3*/
-console.log("*****E3******");
+console.log("*****E3😀******");
 stringTest="Hola";
 stringTest2="Adios";
 function greeting(str){
