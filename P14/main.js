@@ -67,12 +67,18 @@ console.log("***E5***");
 🌶️🥛🌶️🥛🌶️🥛*/
 spicyArray = ["🌶️", "🥛", "🌶️", "🥛", "🌶️", "🥛"];
 counter = 0;
-spicyArray.forEach((food) => {
-  counter++;
-  if (food === "🌶️") {
-    spicyArray.splice(counter, 0, "🥵");
-  }
-});
+arraylength = spicyArray.length;
+function addFace(spicyArray) {
+  spicyArray.forEach((food) => {
+    counter++;
+    if (food === "🌶️") spicyArray.splice(counter, 0, "🥵");
+  });
+
+spicyArray.splice(spicyArray.lastIndexOf("🌶️")+1,'🥵');
+return spicyArray;
+}
+addFace(spicyArray);
+
 console.log(spicyArray);
 /*
 6. Añade una 🃏 cartas comodín entre medio de dos cartas . Por
@@ -86,7 +92,7 @@ cardsArray.forEach((card) => {
   counter++;
   if (
     (card === "🎴") &
-    (cardsArray[counter] !== "🃏" || counter === cardsArray.length)
+    (cardsArray[counter] !== "🃏")
   ) {
     cardsArray.splice(counter, 0, "🃏");
   }
