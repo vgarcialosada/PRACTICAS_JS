@@ -1,4 +1,4 @@
-counter = 0;
+
 arrayEmojis = [
   "👶",
   "🌳",

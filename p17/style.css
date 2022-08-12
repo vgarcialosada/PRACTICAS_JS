@@ -1,0 +1,15 @@
+#rock,
+#paper,
+#scissors {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#rock:hover,
+#paper:hover,
+#scissors:hover {
+    cursor:pointer;
+}

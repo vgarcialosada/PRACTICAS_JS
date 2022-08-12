@@ -2,4 +2,4 @@
 console.log(Math.random());
 
 /*Redondear numero*/
-console.log(Math.floor(Math.PI));
+console.log(Math.PI.toFixed(3));
