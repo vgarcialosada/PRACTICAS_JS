@@ -1,0 +1,28 @@
+body {
+  background-color: black;
+}
+
+#content {
+  height: 100%;
+  display: flex;
+  color: white;
+}
+
+.button {
+  height: 10%;
+}
+
+.zoomButton,
+.brightnessButton {
+  height: 50px;
+  width: 50px;
+}
+
+.buttonList {
+  display: inline-block;
+}
+
+#content {
+  filter: brightness(100%) contrast(100%) saturate(100%);
+  -webkit-filter: brightness(100%) contrast(100%) saturate(100%);
+}
